@@ -30,11 +30,11 @@ const Wrapper = (p, context) => {
   }
   if (p.border) style['border'] = p.borderSize + "px solid " + p.borderColor
   if (p.shadow) style['boxShadow'] = "0px 3px 8px rgba(18, 18, 18, 0.04), 0px 1px 1px rgba(18, 18, 18, 0.02)"
-  return h('div', style)
+  return h('div', { style: style }, p.children)
 }
 
 const Text = (p, context) => {
-  return h('p', {
+  return h('p', { style: {
     margin: 0,
     padding: 0,
     textAlign: "center",
@@ -45,7 +45,7 @@ const Text = (p, context) => {
     lineHeight: 0,
     textTransform: "uppercase",
     fontWeight: 500
-  })
+  }}, p.child)
 }
 
 const Avvvatar = (props, context) => {
@@ -71,11 +71,12 @@ const Avvvatar = (props, context) => {
   if (style === 'character') {
     elem = h(Text, {
       color: TEXT_COLORS[key],
-      size: size
-    }, name)
+      size: size,
+      child: name
+    })
   } else {
     elem = h(Shape, {
-      name: `Shape${shapeKey}`,
+      name: "Shape" + shapeKey,
       color: SHAPE_COLORS[key],
       size: Math.round((size) / 100 * 50)
     })
@@ -88,8 +89,9 @@ const Avvvatar = (props, context) => {
     border: border,
     borderSize: borderSize,
     borderColor: borderColor,
-    radius: radius
-  }, [elem])
+    radius: radius,
+    children: [elem]
+  });
 }
 
 export default Avvvatar

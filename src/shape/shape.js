@@ -8,7 +8,7 @@ const Shape = (props, context) => {
     if(!Tag) {
         return null
     }
-    return h('span', { name, size, color, role: "img",  display: "inline-flex", alignItems: "center", verticalAlign: "middle"}, [
+    return h('span', { name: name, size: size, role: "img",  style: {display: "inline-flex", alignItems: "center", verticalAlign: "middle", color: "#"+color}}, [
         h(Tag, { width: size })
     ])
 }
