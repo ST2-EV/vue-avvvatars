@@ -65,7 +65,7 @@ const Avvvatar = (props, context) => {
 
   const key = randiman({ value, min: 0, max: 19 });
 
-  const shapeKey = randiman({ value, min: 1, max: 60 })
+  const shapeKey = randiman({ value, min: 1, max: 12 })
 
   let elem;
   if (style === 'character') {
