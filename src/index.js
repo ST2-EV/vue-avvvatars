@@ -1,4 +1,4 @@
-import Avvvatar from './components/Avvvatar.js';
+import Avvvatar from './Avvvatar.js';
 
 export default {
     install: (app, options) => {
