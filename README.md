@@ -113,4 +113,4 @@ Override border color
 
 ## License
 
-MIT
+[MIT](https://github.com/ST2-EV/vue-avvvatars/blob/master/LICENSE.md)
