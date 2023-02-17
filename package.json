@@ -1,6 +1,5 @@
 {
   "name": "vue-avvvatars",
-  "private": true,
   "version": "0.0.1",
   "files": ["dist"],
   "type": "module",
