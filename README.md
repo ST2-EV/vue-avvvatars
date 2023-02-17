@@ -7,7 +7,9 @@ A vue3 port of [avvvatars-react](https://github.com/nusu/avvvatars)
 https://user-images.githubusercontent.com/1702215/158075475-c23004ab-827a-45ad-bdba-aee29ac5b582.mp4
 
 Credits:
-Original Authors: [Nusu Alabuga](https://twitter.com/nusualabuga) and [Oguz Yagiz Kara](https://twitter.com/oguzyagizkara)
+
+React Authors: [Nusu Alabuga](https://twitter.com/nusualabuga) and [Oguz Yagiz Kara](https://twitter.com/oguzyagizkara)
+
 🙏 Special thanks to [Monika Michalczyk](https://www.monikamichalczyk.com/) for awesome shapes 🙏
 
 ## Installation
@@ -37,7 +39,7 @@ app.mount('#app')
 
 ### `value: string`
 
-This is required for plugin to work, each value generates a random avatar to unique to this value, so each time plugin renders, you will get the same results. 
+This is required for plugin to work, each value generates a random avatar to unique to this value, so each time plugin renders, you will get the same results.
 
 ```vue
 <VueAvvvatar value="best_user@gmail.com" />
@@ -77,7 +79,7 @@ Enable shadow around the avatar.
 <VueAvvvatar value="best_user@gmail.com" :shadow="false" />
 ```
 
-### `radius?: number` (default [size](https://github.com/nusu/avvvatars#size-number--default-32))
+### `radius?: number (default [size](https://github.com/nusu/avvvatars#size-number--default-32))`
 
 Override the radius of the avatar, it takes `size` by default to always turn it to a circle
 
